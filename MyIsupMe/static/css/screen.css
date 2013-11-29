@@ -1,0 +1,49 @@
+/* reset */
+body{margin-left:5%;margin-right:5%;margin-top:0.5%; margin-bottom:0%; background: #333  ;padding-left:5%;padding-right:5%;padding-top:5%}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+legend{color:#000}
+#yui3-css-stamp.cssreset{display:none}
+
+/*
+ light: e03639;
+ gray: eeede8;
+ dark: 333;
+*/
+
+* { font-family: 'Open Sans', sans-serif; font-size: 14px; color: #333; line-height: 1.6em }
+h1, h2, h3, h4 { font-family: 'Ubuntu' sans-serif }
+header { background: #333; color: white; text-align: center }
+h1 { height: 180px; background: url('logo.png') top center no-repeat; text-indent: -999em }
+h2 { color: white; text-transform: uppercase; font-size: 36px; padding: 10px 0 20px }
+a { color: #2518b5 }
+ol { list-style-type: decimal; padding: 30px }
+code { font-family: monospace; padding: 0 .2em; color: #000 }
+strong { font-weight: bold }
+
+
+
+h3 { font-size: 36px; padding-bottom: 10px; margin: 50px 0 20px; border-bottom: 2px #de252a solid; text-align: center }
+h4 { font-size: 20px; padding-bottom: 10px; margin: 50px 0 20px  }
+
+table { align: center; width: 400px; margin: 0 auto; table-layout: fixed; }
+th { padding: 1em 0; background-color; background: #ffffff;border-bottom: 1px #333 solid;border-right: 1px #333 solid }
+th[scope=col] { border-bottom: 1px #333 solid }
+th[scope=row] { border-right: 1px #333 solid }
+th, td { text-align: center}
+tbody tr { border-bottom: 1px #333 solid }
+
+footer { text-align:center; color: white; padding: 30px 0 }
+footer a, footer p { color: white }
+
