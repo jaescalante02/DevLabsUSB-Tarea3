@@ -13,16 +13,16 @@ def home(request):
 def verificacion(request):
     webpage=request.POST['webpage']
     if(not (':' in webpage)):
-        webpage = "http://" + webpage
+        webpage = 'http://' + webpage
     now= datetime.datetime.now()
-    if (webpage):
+    if (('.' in webpage) and (len(webpage)>3)):
        #Reviso que el cliente no exista ya
       try:
           httpresp = urllib.urlopen(webpage).getcode()  
       except IOError:
           return render (request, 'fail.html', {'now':now})             
  
-      return render (request, 'success.html', {'now':now})
+      return render (request, 'success.html', {'now':now, 'pag':webpage})
     else:
       return render (request, 'incomplete.html', {'now':now})
 

@@ -88,6 +88,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+STATIC_DIR_ROOT,STATIC_CSS_ROOT,STATIC_IMG_ROOT,STATIC_JS_ROOT,
 )
 
 # List of finder classes that know how to find static files in
@@ -96,7 +97,6 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
-    STATIC_DIR_ROOT,STATIC_CSS_ROOT,STATIC_IMG_ROOT,STATIC_JS_ROOT
 )
 
 # Make this unique, and don't share it with anybody.
@@ -138,6 +138,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'gunicorn'
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:

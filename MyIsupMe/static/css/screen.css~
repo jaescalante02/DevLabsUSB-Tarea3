@@ -33,7 +33,7 @@ strong { font-weight: bold }
 
 #panel
 {
-padding:20px;
+padding:30px;
 text-align:center;
 background-color:#eeede8;
 border:solid 1px #c3c3c3;

@@ -10,5 +10,7 @@
     <hr></hr>
     <footer>
         <p> Accesando el: {{ now }} </p>
+      <p>Contacto: <a href="mailto:devlabs-usb@talpor.com">devlabs-usb@talpor.com</a></p>
+      <p>Derechos reservados 2013.</p>
     </footer>
 </html>

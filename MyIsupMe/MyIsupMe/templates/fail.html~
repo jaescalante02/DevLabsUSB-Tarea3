@@ -5,10 +5,20 @@
     </head>
     <title> Home Page </title>
     <body>
-        <h2> Mal </h2>
+
+<div id="panel">
+<p>
+
+No nos engañas! Eso no es una página web
+
+</p>
+</div>
+
     </body>
     <hr></hr>
     <footer>
         <p> Accesando el: {{ now }} </p>
+      <p>Contacto: <a href="mailto:devlabs-usb@talpor.com">devlabs-usb@talpor.com</a></p>
+      <p>Derechos reservados 2013.</p>
     </footer>
 </html>

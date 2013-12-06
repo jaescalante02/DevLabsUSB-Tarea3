@@ -5,18 +5,28 @@
         {% block style_css %}{% endblock %}
     </head>
     <title> Home Page </title>
+<header>
+      <h1>DevLabs__USB</h1>
+      <h2>Tarea 3</h2>
+</header>
     <body>
+<div id="panel">
         <form action="/verificacion" method="post">
             {% csrf_token %}
-			<div>
-            <h2 for="webpage">Webpage</h2>  
-			<input type="text" name="webpage">
-
+            <table>
+            <tr>
+            <td><p for="webpage">Webpage</p></td>  
+	    <td><input type="text" name="webpage"></td>
+            </tr>
+            </table>
+            <br>
             <p> <input type="submit" value="Iniciar" class="button"></p>
         </form>
+</div>
     </body>
-    <hr></hr>
     <footer>
         <p> Accesando el: {{ now }} </p>
+        <p>Contacto: <a href="mailto:devlabs-usb@talpor.com">devlabs-usb@talpor.com</a></p>
+        <p>Derechos reservados 2013.</p>
     </footer>
 </html>
