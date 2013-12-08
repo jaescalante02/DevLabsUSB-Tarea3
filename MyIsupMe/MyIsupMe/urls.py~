@@ -10,7 +10,9 @@ urlpatterns = patterns('',
     # url(r'^$', 'MyIsupMe.views.home', name='home'),
     # url(r'^MyIsupMe/', include('MyIsupMe.foo.urls')),
     url(r'^$', vista.home),
-    url(r'^/verificacion$', vista.verificacion),
+    url(r'^verificacion$', vista.verificacionredirect),
+    url(r'^verificacion/(\S+)$', vista.verificacion),
+    url(r'^\S+$', vista.verificacion),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 

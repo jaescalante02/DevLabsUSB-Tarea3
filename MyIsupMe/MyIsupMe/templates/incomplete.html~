@@ -5,9 +5,13 @@
     </head>
     <title> Home Page </title>
     <body>
-        <h2> Campo Incompleto </h2>
+<div id="panel">
+<h3>
+
+No nos engañas! Esto no es una página web
+</h3>
+</div>
     </body>
-    <hr></hr>
     <footer>
         <p> Accesando el: {{ now }} </p>
       <p>Contacto: <a href="mailto:devlabs-usb@talpor.com">devlabs-usb@talpor.com</a></p>

@@ -7,11 +7,16 @@
     <body>
 
 <div id="panel">
-<p>
+<h3>
 
-Hoy no es tu día de suerte.. <a href='{{pag}}'>{{pag}}</a>
+Hoy no es tu día de suerte..<br>
+<a href='{{pag}}'>{{pag}}</a> <br>
 
-</p>
+Se ve bien desde acá<br><br>
+<h4>
+<a href='/'>Quieres asegurarte revisando otra página con nosotros?</a>
+</h4>
+</h3>
 </div>
 
     </body>

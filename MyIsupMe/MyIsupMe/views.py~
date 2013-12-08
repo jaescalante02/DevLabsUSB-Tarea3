@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 import datetime
 import urllib
 from django.template import Context
@@ -10,8 +10,13 @@ def home(request):
   now= datetime.datetime.now()
   return render (request,'index.html',{'now':now})
 
-def verificacion(request):
+def verificacionredirect(request):
     webpage=request.POST['webpage']
+    return HttpResponseRedirect("verificacion/" + webpage + "/")
+
+
+def verificacion(request,webpage):
+    #webpage=request.POST['webpage']
     if(not (':' in webpage)):
         webpage = 'http://' + webpage
     now= datetime.datetime.now()
@@ -20,7 +25,7 @@ def verificacion(request):
       try:
           httpresp = urllib.urlopen(webpage).getcode()  
       except IOError:
-          return render (request, 'fail.html', {'now':now})             
+          return render (request, 'fail.html', {'now':now, 'pag':webpage})             
  
       return render (request, 'success.html', {'now':now, 'pag':webpage})
     else:

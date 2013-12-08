@@ -33,7 +33,7 @@ strong { font-weight: bold }
 
 #panel
 {
-padding:30px;
+padding:20px;
 text-align:center;
 background-color:#eeede8;
 border:solid 1px #c3c3c3;
@@ -42,7 +42,10 @@ border:solid 1px #c3c3c3;
 
 
 h3 { font-size: 36px; padding-bottom: 10px; margin: 50px 0 20px; border-bottom: 2px #de252a solid; text-align: center }
-h4 { font-size: 20px; padding-bottom: 10px; margin: 50px 0 20px  }
+h4 { font-size: 20px; padding-bottom: 5px; margin: 50px 0 20px  }
+
+h3 a {font-size: 36px;}
+h4 a {font-size: 20px;}
 
 table { align: center; width: 400px; margin: 0 auto; table-layout: fixed; }
 th { padding: 1em 0; background-color; background: #ffffff;border-bottom: 1px #333 solid;border-right: 1px #333 solid }
