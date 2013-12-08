@@ -16,7 +16,7 @@ def errores(request):
 
 def verificacionredirect(request):
     webpage=request.POST['webpage']
-    return HttpResponseRedirect("verificacion/" + webpage + "/")
+    return HttpResponseRedirect("http://54.209.102.149:19080/verificacion/" + webpage + "/")
 
 
 def verificacion(request,webpage):
@@ -27,7 +27,9 @@ def verificacion(request,webpage):
     if (('.' in webpage) and (len(webpage)>3)):
        #Reviso que el cliente no exista ya
       try:
-          httpresp = urllib.urlopen(webpage).getcode()  
+          httpresp = urllib.urlopen(webpage).getcode()
+          if(httpresp!=200):
+              return render (request, 'fail.html', {'now':now, 'pag':webpage})                 
       except IOError:
           return render (request, 'fail.html', {'now':now, 'pag':webpage})             
  

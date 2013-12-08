@@ -10,6 +10,10 @@ def home(request):
   now= datetime.datetime.now()
   return render (request,'index.html',{'now':now})
 
+def errores(request):
+  now= datetime.datetime.now()
+  return render (request,'error.html',{'now':now})
+
 def verificacionredirect(request):
     webpage=request.POST['webpage']
     return HttpResponseRedirect("verificacion/" + webpage + "/")
